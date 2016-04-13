@@ -38,8 +38,15 @@ class: center, middle
 ![](images/whut.gif)
 
 ---
+class: center, middle
 
-### The good ole' days
+### Real reason for Civil War
+
+<img src="images/civilwar.jpg" style="width: 40%" />
+
+---
+
+### I don't mean like this...
 
 ```html
 <h1 style="color: blue; font-size: 16px;"></h1>
@@ -59,6 +66,7 @@ class: center, middle
 ### Why are we using React anyways?
 
 * It's fast
+* It's got great support
 * It's awesome
 * It's components
 
@@ -75,11 +83,15 @@ class: center, middle
 
 ---
 
-### What ever happened to the separation of the concerns?
+### Separation of the concerns?
 
 * Which ones?
 * Technical concerns?
 * Nah...
+
+???
+
+Some people don't like knockout, angular, etc
 
 ---
 
@@ -131,6 +143,11 @@ function Button({ href, children, onClick }) {
 ```
 
 * NO state here
+
+???
+
+Concerns already "mixed" at a technical level
+Not at a logical level
 
 ---
 
@@ -256,6 +273,8 @@ function Button({ href, children, onClick, color, size, height, rounded, full })
 }
 ```
 
+* Ask for a few more props
+
 ---
 
 ### Change the styles based on those props
@@ -283,6 +302,8 @@ if (full) {
   style.push(styles.type.full);
 }
 ```
+
+* Props control how things render
 
 ---
 
@@ -313,6 +334,9 @@ Button.propTypes = {
   full: React.PropTypes.bool,
 };
 ```
+
+* Presents the options
+
 ---
 
 ### Default Props
@@ -329,6 +353,9 @@ Button.defaultProps = {
 };
 ````
 
+* Have defaults
+* `<Button>Hello World</Button>` just works (tm)
+
 ---
 
 ### Demo
@@ -339,6 +366,7 @@ Button.defaultProps = {
 
 ### Advantages
 
+* Makes living styleguides easy
 * Everything is in one place
 * Logical separation
 * Can export style object
