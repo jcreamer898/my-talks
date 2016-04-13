@@ -50,6 +50,9 @@ class: center, middle
 --
 
 * Wrong...
+--
+
+* Sorta...
 
 ---
 
@@ -329,8 +332,6 @@ Button.defaultProps = {
 ---
 
 ### Demo
-
-* https://jsbin.com/penaka/edit?js,output
 
 <iframe width="100%" height="300" src="//jsfiddle.net/jcreamer898/L1azfc4f/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
